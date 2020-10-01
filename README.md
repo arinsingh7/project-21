@@ -1,2 +1,2 @@
-# project-21
-made by visual studios
+# p5.play-boilerplate
+Boiler plate for p5.play
