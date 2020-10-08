@@ -13,13 +13,10 @@ function setup() {
   
   bullet = createSprite(50, 200, 50, 50);
   bullet.velocityX = speed;
-  //give the bullet a colour
-  //   bullet.shapeColor=color(255);
+  bullet.shapeColor=color(255);
 
   wall = createSprite(1200, 200, thickness, height/2);
-  
-  //give the wall a colour
-  // wall.shapeColor=color(230,230,230);
+  wall.shapeColor=color(230,230,230);
 
 
 }
@@ -43,11 +40,10 @@ function draw() {
   drawSprites();
 }
 
-//use different words as arguments in this function.
-//bullet & wall are already the names of the variables in which you have created sprites
-function hasCollided(bullet, wall) {
-  bulletRightEdge = bullet.x + bullet.width;
-  wallLeftEdge =wall.x;
+
+function hasCollided(b, w) {
+  bulletRightEdge = b.x + b.width;
+  wallLeftEdge =w.x;
   if(bulletRightEdge>=wallLeftEdge) {
 
     return true;
