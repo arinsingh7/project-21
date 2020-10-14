@@ -13,7 +13,7 @@ function setup() {
   
   bullet = createSprite(50, 200, 50, 50);
   bullet.velocityX = speed;
-  bullet.shapeColor=color(255);
+  bullet.shapeColor=color(139, 69, 19);
 
   wall = createSprite(1200, 200, thickness, height/2);
   wall.shapeColor=color(230,230,230);
